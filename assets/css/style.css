@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
 
 :root{
@@ -12,7 +14,10 @@
     --nav-color: rgb(57, 69, 69,0.7);
     --primary-color: rgb(24, 65, 177);
     --secondary-color: rgb(197, 48, 48);
-    --light-primary-color: rgb(52, 96, 218);
+    --light-primary-color: rgb(121, 151, 235);
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color:#009cff;
 }
 
 .category{
@@ -93,7 +98,7 @@ header.hero{
 }
 
 #menu a:hover{
-    color: var(--primary-color);
+    color: var(--light-primary-color);
     background-color: #211818;
     border-radius: 10px;
 }
@@ -103,7 +108,7 @@ header.hero{
 }
 
 #lang a:hover{
-    color: var(--primary-color);
+    color: var(--light-primary-color);
     background-color: #211818;
     border-radius: 10px;
 }
@@ -166,6 +171,81 @@ header.hero{
     background: var(--tech-color);
 }
 
+/* services grid */
+
+#services{
+
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+#services .grid-title{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+#services .grid-item{
+    display: flex;
+    flex-direction: column;
+    background-color:#d9dff4;
+    padding: .4rem;
+    border-radius: 10px;
+    margin: .2rem;
+    border: 1px solid rebeccapurple;
+}
+
+#services .grid-item:nth-child(){
+    grid-column: span 2/span 2;
+}
+
+/* headings */
+
+#services .grid-item h3{
+    display: inline-block;
+    padding: .1rem .2rem;
+    width: fit-content;
+    border-radius: 3px;
+    margin-top: .2rem;
+}
+
+
+/* keymarkets */
+
+#key-markets{
+
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#key-markets .panel{
+    display: flex;
+    justify-content:space-between;
+    padding: .3rem;
+}
+
+
+#key-markets .panel .map-img.eu{
+    background: url('../images/download.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 20rem;
+    border: 1px solid black;
+}
+#key-markets .panel .map-img{
+    margin-right: .4rem;
+    border-radius: 10px;
+}
+
+.panel p{
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
 /* utilities */
 
 .container{
@@ -222,3 +302,20 @@ header.hero{
 .text-secondary{
     color:var(--secondary-color)
 }
+
+.text-ent{
+    color: var(--ent-color);
+}
+
+.text-tech{
+    color: var(--tech-color);
+}
+
+.text-sports{
+    color: var(--sports-color);
+}
+
+.hide{
+    display: none !important;
+}
+
