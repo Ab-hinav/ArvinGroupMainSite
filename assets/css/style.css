@@ -226,6 +226,8 @@ header.hero{
     display: flex;
     justify-content:space-between;
     padding: .3rem;
+    transition: all .3s ease-in;
+    opacity: 1;
 }
 
 
@@ -317,5 +319,6 @@ header.hero{
 
 .hide{
     display: none !important;
+    opacity: 1;
 }
 
