@@ -16,6 +16,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./css/mobile.css"
+    />
     <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
@@ -33,12 +38,13 @@
           <ul id="menu">
             <li><a href="#services">Services</a></li>
             <li><a href="#key-markets">KeyMarkets</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact</a></li>
           </ul>
           <div id="lang">
             <a href="">EN</a>
             <a href="">RU</a>
+            <a href="">LV</a>
           </div>
         </div>
 
@@ -64,7 +70,7 @@
           </div>
         </div>
 
-        <a href="#about" class="btn"
+        <a href="#contact-us" class="btn"
           ><i class="fas fa-chevron-right"></i> Contact Us</a
         >
       </div>
@@ -136,7 +142,7 @@
           </p>
         </div>
       </section>
-
+      <!-- key markets -->
       <section id="key-markets" class="bg-light">
         <h2>Our Key Markets</h2>
         <ul>
@@ -144,7 +150,7 @@
           <button class="btn btn-primary">Eastern Europe</button>
           <button class="btn btn-secondary">China</button>
         </ul>
-        <div class="panel eu">
+        <div class="panel eu ">
           <div class="map-img eu"></div>
           <p class="eu bg-dark">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -153,7 +159,7 @@
             <button class="btn">Next</button>
           </p>
         </div>
-        <div class="panel ceu hide">
+        <div class="panel ceu hide ">
           <div class="map-img eu"></div>
           <p class="eu bg-primary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -170,6 +176,56 @@
           </p>
         </div>
       </section>
+
+      <section id="about-us" class="bg-light">
+        
+        <div class="flex-items">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut dignissimos voluptates ipsa cumque fuga quam ipsum, numquam placeat nesciunt, beatae voluptatum id. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam iste quidem saepe obcaecati voluptate ipsam, doloremque beatae reiciendis, eum dignissimos nam, quisquam alias vero.
+          </p>
+        </div>
+        <img src="./assets/images/arving-logo.jpg" alt="">
+      </section>
+
+      <section id="contact-us" class="bg-light">
+        <h2> Book Your Free Business Consultation </h2>
+
+        <form action="" method="post">
+          <div class="form-control">
+            <label for="Name"> Your Name</label>
+            <input type="text" name="name" placeholder="Your Name so we know who you are !">
+            <label for="Email"> Your Email</label>
+            <input type="email" name="email" id="email" placeholder="So we can connect !">
+            <label for="message">Your Message</label>
+            <textarea name="message" placeholder="Your Message to Us !" rows="5"></textarea>
+          </div>
+
+          <button class="btn">Submit</button>
+        </form>
+
+
+      </section>
+
     </main>
+
+    <footer id="main-footer" class="bg-dark">
+      <div class="footer-content">
+        <img src="./assets/images/arving-logo.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam dolorem, dolorum assumenda ad sequi quo id maiores doloremque mollitia?</p>
+      </div>
+
+      <div class="social">
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+
+      <div class="legal">
+        <a href="">Privacy</a>
+        <a href="">Legal</a>
+      </div>
+
+  </footer>
+
   </body>
 </html>

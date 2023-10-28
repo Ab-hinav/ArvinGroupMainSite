@@ -52,7 +52,7 @@ header.hero{
 .hero::before {
     content: '';
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(73, 56, 56, 0.6);
     top: 0;
     left: 0;
     width: 100%;
@@ -227,7 +227,6 @@ header.hero{
     justify-content:space-between;
     padding: .3rem;
     transition: all .3s ease-in;
-    opacity: 1;
 }
 
 
@@ -246,6 +245,79 @@ header.hero{
     padding: 1rem;
     border-radius: 10px;
     width: 80%;
+}
+
+/* about us  */
+#about-us{
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-us .flex-items{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+
+#contact-us{
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#contact-us .form-control{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+}
+#contact-us .form-control label{
+    font-size: large;
+    font-weight: 600;
+    margin: .3rem 0;
+}
+
+#contact-us .form-control input,#contact-us .form-control textarea{
+    line-height: 2;
+    padding: .3rem;
+    border-radius: 10px;
+}
+
+/* main footer */
+#main-footer{
+    padding: 1rem;
+}
+
+#main-footer .social{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#main-footer .social a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+#main-footer .footer-content{
+    width: 40%;
+}
+
+#main-footer .legal{
+    margin-top: .2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#main-footer .legal a{
+    text-decoration: none;
+    color: #f4f4f4;
 }
 
 /* utilities */
