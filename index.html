@@ -21,7 +21,7 @@
       media="screen and (max-width: 768px)"
       href="./css/mobile.css"
     />
-    <script src="./assets/js/script.js" defer></script>
+   
   </head>
   <body>
     <header class="hero">
@@ -190,17 +190,17 @@
       <section id="contact-us" class="bg-light">
         <h2> Book Your Free Business Consultation </h2>
 
-        <form action="" method="post">
+        <form id="contact-form" method="post">
           <div class="form-control">
             <label for="Name"> Your Name</label>
-            <input type="text" name="name" placeholder="Your Name so we know who you are !">
+            <input id="name-input" type="text" name="name" placeholder="Your Name so we know who you are !">
             <label for="Email"> Your Email</label>
-            <input type="email" name="email" id="email" placeholder="So we can connect !">
+            <input type="email" id="email-input" name="email" id="email" placeholder="So we can connect !">
             <label for="message">Your Message</label>
-            <textarea name="message" placeholder="Your Message to Us !" rows="5"></textarea>
+            <textarea name="message" id="description-input" placeholder="Your Message to Us !" rows="5"></textarea>
           </div>
 
-          <button class="btn">Submit</button>
+          <button class="btn" onClick="submitToAPI(event)">Submit</button>
         </form>
 
 
@@ -226,6 +226,10 @@
       </div>
 
   </footer>
-
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous" defer></script>
+    <script src="./assets/js/script.js" defer></script>
   </body>
 </html>
