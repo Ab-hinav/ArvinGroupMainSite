@@ -19,8 +19,9 @@
     <link
       rel="stylesheet"
       media="screen and (max-width: 768px)"
-      href="./css/mobile.css"
+      href="./assets/css/mobile.css"
     />
+    <link rel="stylesheet" href="./assets/css/menu.css">
    
   </head>
   <body>
@@ -48,9 +49,33 @@
           </div>
         </div>
 
-        <div id="hamburger-menu">
-          <div></div>
+        
+      </nav>
+
+      <nav id="hamburger-nav">
+        <div class="logo"><img
+          src="/assets/images/arving-logo.jpg"
+          width="87"
+          height="56"
+          alt=""
+        /></div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger" onclick="toggleMenu2()" ><div></div></div>
+          <div class="menu">
+                <div>
+                    <div>
+                            <ul>
+                                <li><a href="#services" onclick="toggleMenu2()">Our Services</a></li>
+                                <li><a href="#key-markets" onclick="toggleMenu2()">Key Markets</a></li>
+                                <li><a href="#about-us" onclick="toggleMenu2()">About Us</a></li>
+                                <li><a href="#contact-us" onclick="toggleMenu2()">Contact Us</a></li>
+                            </ul>
+                        </div>
+                </div>
+          </div>
         </div>
+        
       </nav>
 
       <div class="content">
