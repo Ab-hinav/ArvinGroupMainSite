@@ -1,0 +1,25 @@
+#hamburger-nav {
+    display: flex;
+}
+
+#hamburger-nav .logo{
+    position: absolute;
+}
+
+
+#main-nav{
+    display: none;
+}
+
+.content .container{
+    display: flex;
+    flex-direction: column;
+}
+
+#services {
+    grid-template-columns: 1fr;
+}
+
+#services .grid-title{
+    grid-column: 1;
+}

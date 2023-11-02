@@ -79,3 +79,8 @@ function submitToAPI(e) {
         }
     });
 }
+
+function toggleMenu2(){
+    const checkBox = document.querySelector('.toggler');
+    checkBox.click();
+}
