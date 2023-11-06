@@ -18,8 +18,34 @@
 
 #services {
     grid-template-columns: 1fr;
+    margin: .2rem;
 }
 
 #services .grid-title{
     grid-column: 1;
+}
+
+#key-markets{
+    margin: .2rem;
+}
+
+#about-us{
+    margin: .2rem;
+}
+
+#contact-us{
+    margin: .2rem;
+}
+
+.panel{
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.panel p{
+    width: 100%;
+}
+
+.btn{
+    margin: .2rem;
 }
