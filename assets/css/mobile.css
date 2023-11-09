@@ -31,6 +31,11 @@
 
 #about-us{
     margin: .2rem;
+    flex-direction: column;
+}
+
+#about-us .flex-items{
+    width: 100%;
 }
 
 #contact-us{
